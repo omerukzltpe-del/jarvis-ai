@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.black-formatter",
+    "ms-python.pylint",
+    "ms-toolsai.jupyter",
+    "mikestead.dotenv",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "PKief.material-icon-theme",
+    "zhuangtongfa.material-theme",
+    "christian-kohler.path-intellisense",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-vscode.live-server",
+    "formulahendry.code-runner",
+    "njpwerner.autodocstring",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

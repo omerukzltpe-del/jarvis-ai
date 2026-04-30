@@ -1,0 +1,11 @@
+    {
+      "name": "🎤 JARVIS Voice Mode",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis_voice.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },

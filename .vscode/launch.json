@@ -1,0 +1,92 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🎤 JARVIS Voice Mode",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis_voice.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "⬡ JARVIS Web (Flask)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis_web.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "FLASK_ENV": "development"
+      },
+      "justMyCode": false
+    },
+    {
+      "name": "🤖 JARVIS Masaüstü (tkinter)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "✈️ Telegram Bot",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/telegram_bot.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "🌅 Sabah Brifing (Test)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/jarvis_briefing.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    },
+    {
+      "name": "🔑 VAPID Anahtar Üret",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/vapid_olustur.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "🧪 Config Test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "⬡ JARVIS Tümü (Web + Telegram)",
+      "configurations": [
+        "⬡ JARVIS Web (Flask)",
+        "✈️ Telegram Bot"
+      ],
+      "stopAll": true
+    }
+  ]
+}

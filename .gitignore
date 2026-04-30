@@ -1,0 +1,40 @@
+# ── Gizli dosyalar ───────────────────────────
+.env
+*.env.local
+*.env.production
+
+# ── JARVIS verileri ───────────────────────────
+.jarvis_memory.json
+.jarvis_chat.db
+.jarvis_uploads/
+
+# ── Python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── VS Code (kişisel ayarlar hariç) ──────────
+.vscode/settings.json.local
+
+# ── Loglar ───────────────────────────────────
+*.log
+logs/
+
+# ── Geçici dosyalar ──────────────────────────
+*.tmp
+*.bak.*
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Yedekler ─────────────────────────────────
+*.bak
+backup/

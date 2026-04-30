@@ -1,0 +1,135 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "⬡ JARVIS Başlat (Hepsi)",
+      "type": "shell",
+      "command": "bash hepsini_baslat.sh",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new",
+        "focus": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {}
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🌐 Sadece Web Başlat",
+      "type": "shell",
+      "command": "source .env 2>/dev/null; python3 jarvis_web.py",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "✈️ Sadece Telegram Başlat",
+      "type": "shell",
+      "command": "source .env 2>/dev/null; python3 telegram_bot.py",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📦 Paketleri Kur (pip)",
+      "type": "shell",
+      "command": "pip3 install -r requirements.txt --break-system-packages",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔄 JARVIS Yeniden Başlat",
+      "type": "shell",
+      "command": "pkill -f jarvis_web.py; pkill -f telegram_bot.py; sleep 1; bash hepsini_baslat.sh",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🛑 JARVIS Durdur",
+      "type": "shell",
+      "command": "pkill -f jarvis_web.py; pkill -f telegram_bot.py; echo 'JARVIS durduruldu.'",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📊 Sistem Durumu",
+      "type": "shell",
+      "command": "sudo systemctl status jarvis --no-pager -l",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📋 Canlı Log",
+      "type": "shell",
+      "command": "journalctl -u jarvis -f --no-pager",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🌅 Brifing Test",
+      "type": "shell",
+      "command": "source .env 2>/dev/null; python3 jarvis_briefing.py",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🔑 VAPID Anahtar Üret",
+      "type": "shell",
+      "command": "source .env 2>/dev/null; python3 vapid_olustur.py",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
