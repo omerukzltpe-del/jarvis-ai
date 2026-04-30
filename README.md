@@ -1,4 +1,5 @@
 # ⬡ J.A.R.V.I.S. — Multi-Agent AI Asistan
+<img width="1871" height="933" alt="image" src="https://github.com/user-attachments/assets/158b5c03-492b-47ee-9ab7-eab1b6a0b761" />
 
 ## Dosya Yapısı
 
