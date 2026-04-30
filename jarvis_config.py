@@ -8,14 +8,14 @@ from pathlib import Path
 
 # ── LM Studio Bağlantısı ─────────────────────────────────────────────────────
 LM_STUDIO_URL = os.getenv("LM_STUDIO_URL", "http://localhost:1234/v1")
-LM_STUDIO_API_KEY = os.getenv("LM_STUDIO_API_KEY", "sk-lm-ezBlKcHs:ypvnx56hg5tLVxD5ehcW")
+LM_STUDIO_API_KEY = os.getenv("LM_STUDIO_API_KEY", "")
 
 # ── API Modelleri ─────────────────────────────────────────────────────────────
 CLAUDE_MODEL  = "claude-sonnet-4-5"
 GEMINI_MODEL  = "gemini-2.5-flash"   # 2.5 Flash — ücretsiz kota
 
 # Abacus AI — Route LLM
-ABACUS_API_KEY = os.getenv("ABACUS_API_KEY", "s2_f5e241df495f464e84479a79f76c0a39")
+ABACUS_API_KEY = os.getenv("ABACUS_API_KEY", "")
 ABACUS_URL     = "https://routellm.abacus.ai/v1/chat/completions"
 ABACUS_MODEL   = "route-llm"
 
