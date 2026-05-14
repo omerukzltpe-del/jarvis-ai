@@ -1,40 +1,70 @@
-# ── Gizli dosyalar ───────────────────────────
-.env
-*.env.local
-*.env.production
-
-# ── JARVIS verileri ───────────────────────────
-.jarvis_memory.json
-.jarvis_chat.db
-.jarvis_uploads/
-
-# ── Python ───────────────────────────────────
+# Compiled and build artifacts
+*.pyc
 __pycache__/
-*.py[cod]
-*$py.class
+*.o
+*.obj
+*.class
+*.exe
+*.dll
 *.so
-.Python
+*.a
+*.out
+
+# Dependencies
 .venv/
 venv/
-env/
-*.egg-info/
+node_modules/
+.mypy_cache/
+.pytest_cache/
 dist/
 build/
+target/
+.gradle/
 
-# ── VS Code (kişisel ayarlar hariç) ──────────
-.vscode/settings.json.local
-
-# ── Loglar ───────────────────────────────────
+# Logs and temp files
 *.log
-logs/
-
-# ── Geçici dosyalar ──────────────────────────
 *.tmp
-*.bak.*
 *.swp
+*.swo
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System files
 .DS_Store
 Thumbs.db
 
-# ── Yedekler ─────────────────────────────────
-*.bak
-backup/
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
