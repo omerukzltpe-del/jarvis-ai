@@ -87,7 +87,7 @@ ROUTING_RULES = {
     "abacus":   ["abacus","route","yönlendir"],
 }
 # Eşleşme yoksa varsayılan
-DEFAULT_MODEL = "gemma"
+DEFAULT_MODEL = "gemini"
 
 # ── System Prompt ─────────────────────────────────────────────────────────────
 SYSTEM_PROMPT = """Sen J.A.R.V.I.S. (Just A Rather Very Intelligent System) adlı gelişmiş bir yapay zeka asistanısın.
